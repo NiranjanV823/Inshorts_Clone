@@ -1,10 +1,26 @@
+import {Box, styled} from '@mui/material'
 
+// components
 import Header from './components/Header';
+import InfoHeader from './components/InfoHeader';
+import Articles from './components/Articles';
+
+
+
+const Container = styled(Box)`
+  width : 60%;
+  margin: 30px auto 0 auto;
+  `
+
 function App() {
   return (
-    <div>
+    <Box>
      <Header/>
-    </div>
+     <Container >
+     <InfoHeader/>
+     <Articles/>
+     </Container>
+    </Box>
   );
 }
 
