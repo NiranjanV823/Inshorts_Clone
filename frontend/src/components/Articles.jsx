@@ -5,8 +5,12 @@ import { getNews } from '../service/api'
 
 export default function Articles() {
     useEffect(()=>{
-
+      dailyNews();
     }, [])
+
+    const dailyNews = async ()=>{
+     let response=  await  getNews();
+    }
   return (
     <Box>
       
