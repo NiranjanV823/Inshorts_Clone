@@ -1,5 +1,5 @@
 
-import { Card, CardContent, Typography, Box, styled, Grid } from "@mui/material";
+import { Card, CardContent, Typography, styled, Grid } from "@mui/material";
 
 const Component = styled(Card)`
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
@@ -84,7 +84,7 @@ const Article = ({ article }) => {
                         </Author>
                         <Description>{article.description}</Description>
                         <Publisher>
-                            read more at <a href={article.link} target='_blank'>{article.publisher}</a>
+                            read more at <a href={article.link} target='_blank' rel="noreferrer">{article.publisher}</a>
                         </Publisher>
                     </RightContainer>
                 </Grid>
